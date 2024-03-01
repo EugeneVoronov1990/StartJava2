@@ -114,8 +114,8 @@ public class VariableNamesTheme {
         System.out.println("\nпуть до файла - " + path);
 
         //количество чисел в каждой строке
-        int countNum = 5;
-        System.out.println("\nколичество чисел в каждой строке - " + countNum);
+        int countNumsPerLines = 5;
+        System.out.println("\nколичество чисел в каждой строке - " + countNumsPerLines);
 
         //сотни равны?
         boolean isHundredsEqual = true;
@@ -126,8 +126,8 @@ public class VariableNamesTheme {
         System.out.println("\nкомпьютер включен? - " + isComputerTurnedOn);
 
         //есть равные цифры?
-        boolean hasNumEqual = true;
-        System.out.println("\nесть равные цифры? - " + hasNumEqual);
+        boolean hasNumsEqual = true;
+        System.out.println("\nесть равные цифры? - " + hasNumsEqual);
 
         //(что-либо) создано?
         boolean hasCreated = true;
@@ -150,8 +150,8 @@ public class VariableNamesTheme {
         System.out.println("\nэлектронная почта действительна? - " + isMailValid);
 
         //имеются уникальные строки?
-        boolean hasStringUnique = true;
-        System.out.println("\nимеются уникальные строки? - " + hasStringUnique);
+        boolean hasStringsUnique = true;
+        System.out.println("\nимеются уникальные строки? - " + hasStringsUnique);
 
         //старый universally unique identifier
         int oldUuid = 128;
@@ -170,8 +170,8 @@ public class VariableNamesTheme {
         System.out.println("\nпротокол передачи гипертекста - " + http);
 
         //сокращенный uniform resource locator
-        String abbreviatedUrl = "https://ya.ru/?npr=1";
-        System.out.println("\nсокращенный uniform resource locator - " + abbreviatedUrl);
+        String shortUrl = "https://ya.ru/?npr=1";
+        System.out.println("\nсокращенный uniform resource locator - " + shortUrl);
 
         //новый идентификатор клиента
         String newClientId = "135656";
