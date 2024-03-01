@@ -37,8 +37,8 @@ public class VariableNamesTheme {
         System.out.println("\n(переменная хранит символ)& - " + symbol);
 
         //код ошибки
-        String errocCode = "NullPointerException";
-        System.out.println("\nкод ошибки - " + errocCode);
+        String errorCode = "NullPointerException";
+        System.out.println("\nкод ошибки - " + errorCode);
 
         //тип сообщения
         String typeOfMessage = "numeric";
@@ -94,8 +94,8 @@ public class VariableNamesTheme {
         System.out.println("\nполное имя работника месяца - " + fullNameEmployeeOfTheMonth);
 
         //заголовок электронной книги
-        String nameOfBook = "Приключения";
-        System.out.println("\nзаголовок электронной книги - " + nameOfBook);
+        String ebookTitle = "Приключения";
+        System.out.println("\nзаголовок электронной книги - " + ebookTitle);
 
         //размер
         String size = "L";
