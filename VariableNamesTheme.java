@@ -9,12 +9,12 @@ public class VariableNamesTheme {
         System.out.println("\nсумма - " + sum);
 
         //произведение цифр
-        int composition = 2 * 3;
-        System.out.println("\nпроизведение цифр - " + composition);
+        int multiplication = 2 * 3;
+        System.out.println("\nпроизведение цифр - " + multiplication);
 
         //максимальное число
-        long maxValue = Long.MAX_VALUE;
-        System.out.println("\nмаксимальное число - " + maxValue);
+        long max = Long.MAX_VALUE;
+        System.out.println("\nмаксимальное число - " + max);
 
         //количество десятков
         int numOfTens = 10;
@@ -37,23 +37,23 @@ public class VariableNamesTheme {
         System.out.println("\n(переменная хранит символ)& - " + symbol);
 
         //код ошибки
-        String mistake = "NullPointerException";
-        System.out.println("\nкод ошибки - " + mistake);
+        String errocCode = "NullPointerException";
+        System.out.println("\nкод ошибки - " + errocCode);
 
         //тип сообщения
         String typeOfMessage = "numeric";
         System.out.println("\nтип сообщения - " + typeOfMessage);
 
         //число нулей
-        int zeroNum = 2;
-        System.out.println("\nчисло нулей - " + zeroNum);
+        int numOfZero = 2;
+        System.out.println("\nчисло нулей - " + numOfZero);
 
         //уникальное число
         int uniqueNum = 73;
         System.out.println("\nуникальное число - " + uniqueNum);
 
         //случайное число
-        int randomNum = (int) (Math.random()*1000);
+        int randomNum = (int) (Math.random() * 1000);
         System.out.println("\nслучайное число - " + randomNum);
 
         //математическое выражение
@@ -69,29 +69,29 @@ public class VariableNamesTheme {
         System.out.println("\nсчёт в игре - " + score);
 
         //максимальная длина (строки)
-        int length = 5;
-        System.out.println("\nмаксимальная длина (строки) - " + length);
+        int maxLengthLine = 5;
+        System.out.println("\nмаксимальная длина (строки) - " + maxLengthLine);
 
         //пункт меню
-        double point = 2.0;
-        System.out.println("\nпункт меню - " + point);
+        double menuItem = 2.0;
+        System.out.println("\nпункт меню - " + menuItem);
 
         //стоимость кофе на вынос
-        double priceOfCoffee = 3.55;
-        System.out.println("\nстоимость кофе на вынос - " + priceOfCoffee);
+        double costCoffeeToTakeAway = 3.55;
+        System.out.println("\nстоимость кофе на вынос - " + costCoffeeToTakeAway);
         System.out.println();
 
         //дата начала (чего-либо)
-        String date = "01.01.2024";
-        System.out.println("\nдата = " + date);
+        String startDate = "01.01.2024";
+        System.out.println("\nдата = " + startDate);
 
         //окончание диапазона
         String endRange = "$E$6E13";
         System.out.println("\nокончание диапозона - " + endRange);
 
         //полное имя работника месяца
-        String name = "Александр";
-        System.out.println("\nполное имя работника месяца - " + name);
+        String fullNameEmployeeOfTheMonth = "Александр";
+        System.out.println("\nполное имя работника месяца - " + fullNameEmployeeOfTheMonth);
 
         //заголовок электронной книги
         String nameOfBook = "Приключения";
@@ -118,16 +118,16 @@ public class VariableNamesTheme {
         System.out.println("\nколичество чисел в каждой строке - " + countNum);
 
         //сотни равны?
-        boolean isHundredEqual = true;
-        System.out.println("\nсотни равны? - " + isHundredEqual);
+        boolean isHundredsEqual = true;
+        System.out.println("\nсотни равны? - " + isHundredsEqual);
 
         //компьютер включен?
         boolean isComputerTurnedOn = true;
         System.out.println("\nкомпьютер включен? - " + isComputerTurnedOn);
 
         //есть равные цифры?
-        boolean isNumEqual = true;
-        System.out.println("\nесть равные цифры? - " + isNumEqual);
+        boolean hasNumEqual = true;
+        System.out.println("\nесть равные цифры? - " + hasNumEqual);
 
         //(что-либо) создано?
         boolean hasCreated = true;
@@ -150,28 +150,28 @@ public class VariableNamesTheme {
         System.out.println("\nэлектронная почта действительна? - " + isMailValid);
 
         //имеются уникальные строки?
-        boolean isStringUnique = true;
-        System.out.println("\nимеются уникальные строки? - " + isStringUnique);
+        boolean hasStringUnique = true;
+        System.out.println("\nимеются уникальные строки? - " + hasStringUnique);
 
         //старый universally unique identifier
-        int uuid = 128;
-        System.out.println("\nстарый universally unique identifier - " + uuid);
+        int oldUuid = 128;
+        System.out.println("\nстарый universally unique identifier - " + oldUuid);
 
         //производитель оперативной памяти
-        int ram = 256;
-        System.out.println("\nпроизводитель оперативной памяти - " + ram);
+        int manufactureOfRam = 256;
+        System.out.println("\nпроизводитель оперативной памяти - " + manufactureOfRam);
 
         //емкость жесткого диска
-        int ssd = 500;
-        System.out.println("\nемкость жесткого диска - " + ssd);
+        int hdCapacity = 500;
+        System.out.println("\nемкость жесткого диска - " + hdCapacity);
 
         //протокол передачи гипертекста
         String http = "HTTP";
         System.out.println("\nпротокол передачи гипертекста - " + http);
 
         //сокращенный uniform resource locator
-        String url = "https://ya.ru/?npr=1";
-        System.out.println("\nсокращенный uniform resource locator - " + url);
+        String abbreviatedUrl = "https://ya.ru/?npr=1";
+        System.out.println("\nсокращенный uniform resource locator - " + abbreviatedUrl);
 
         //новый идентификатор клиента
         String newClientId = "135656";
@@ -180,5 +180,5 @@ public class VariableNamesTheme {
         //кодировка american standard code for information interchange
         String acsii = "таблица кодировки";
         System.out.println("\nкодировка american standard code for information interchange - " + acsii);
-        }
+    }
 }
