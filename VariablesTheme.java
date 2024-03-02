@@ -33,8 +33,6 @@ public class VariablesTheme {
     System.out.println("   J   a a  v   v  a a  ");
     System.out.println("J  J  aaaaa  V V  aaaaa ");
     System.out.println(" JJ  a     a  V  a     a");
-    System.out.println();
-
 
     System.out.println("\n4.Вывод min и max знвчений целых числовых типов");
         byte maxByte = 127;
