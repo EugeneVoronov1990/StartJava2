@@ -148,7 +148,7 @@ public class VariablesTheme {
                 "\nСумма его цифр = " + sumOfTheDigits +
                 "\nПроизведение = " + multiplication);
 
-        System.out.println("9.Вывод времени");
+        System.out.println("\n9.Вывод времени");
         int time = 86399;
         int hours = time/(3600);
         int minutes = time%3600/60;
