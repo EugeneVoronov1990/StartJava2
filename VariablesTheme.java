@@ -10,13 +10,13 @@ public class VariablesTheme {
         char amountOfCores = '4';
         boolean isComputerWorking = true;
         System.out.println(windowsModel + " - модель windows\n" +
-        systemBitDepth + " - разрядность системы\n" + 
-        hdCapacity + " - вместимость жёсткого диска\n" + 
-        amountOfRam + " -  количество оперативной памяти\n" + 
-        usbType + " - вид usb\n" + 
-        cpuFrequency + " - частота cpu\n" + 
-        amountOfCores + " - количество ядер\n" + 
-        isComputerWorking + " - работает ли компьютер");
+                systemBitDepth + " - разрядность системы\n" + 
+                hdCapacity + " - вместимость жёсткого диска\n" + 
+                amountOfRam + " -  количество оперативной памяти\n" + 
+                usbType + " - вид usb\n" + 
+                cpuFrequency + " - частота cpu\n" + 
+                amountOfCores + " - количество ядер\n" + 
+            isComputerWorking + " - работает ли компьютер");
 
         System.out.println("\n2.Расчёт стоимости товара со скидкой");
         double penCost = 100;
@@ -25,8 +25,8 @@ public class VariablesTheme {
         double sumDiscount = productsCost * 0.11;
         double discountPrice = productsCost - sumDiscount;
         System.out.println(productsCost + " - общая стоимость товаров без скидки\n" + 
-        sumDiscount + " - сумма скидки\n" + 
-        discountPrice + " - общая стоимость товара со скидкой");
+                sumDiscount + " - сумма скидки\n" + 
+                discountPrice + " - общая стоимость товара со скидкой");
 
         System.out.println("\n3. Вывод слова JAVA");
         System.out.println("   J    a  v     v  a   ");
@@ -37,52 +37,36 @@ public class VariablesTheme {
         System.out.println("\n4.Вывод min и max значений целых числовых типов");
         byte maxByte = 127;
         System.out.println("первоначальное значение - " + maxByte);
-        maxByte = ++maxByte;
-        System.out.println("значение после инкремента на единицу - " + maxByte);
-        maxByte = --maxByte;
-        System.out.println("значение после декремента на единицу - " + maxByte);
+        System.out.println("значение после инкремента на единицу - " + maxByte++);
+        System.out.println("значение после декремента на единицу - " + maxByte--);
         byte minByte = -128;
         System.out.println("первоначальное значение - " + minByte);
-        minByte = ++minByte;
-        System.out.println("значение после инкремента на единицу - " + minByte);
-        minByte = --minByte;
-        System.out.println("значение после декремента на единицу - " + minByte);
+        System.out.println("значение после инкремента на единицу - " + minByte++);
+        System.out.println("значение после декремента на единицу - " + minByte--);
         short maxShort = 32767;
         System.out.println("первоначальное значение - " + maxShort);
-        maxShort = ++maxShort;
-        System.out.println("значение после инкремента на единицу - " + maxShort);
-        maxShort = --maxShort;
-        System.out.println("значение после декремента на единицу - " + maxShort);
+        System.out.println("значение после инкремента на единицу - " + maxShort++);
+        System.out.println("значение после декремента на единицу - " + maxShort--);
         short minShort = -32768;
         System.out.println("первоначальное значение - " + minShort);
-        minShort = ++minShort;
-        System.out.println("значение после инкремента на единицу - " + minShort);
-        minShort = --minShort;
-        System.out.println("значение после декремента на единицу - " + minShort);
+        System.out.println("значение после инкремента на единицу - " + minShort++);
+        System.out.println("значение после декремента на единицу - " + minShort--);
         int maxInt = 2147483647;
         System.out.println("первоначальное значение - " + maxInt);
-        maxInt = ++maxInt;
-        System.out.println("значение после инкремента на единицу - " + maxInt);
-        maxInt = --maxInt;
-        System.out.println("значение после декремента на единицу - " + maxInt);
+        System.out.println("значение после инкремента на единицу - " + maxInt++);
+        System.out.println("значение после декремента на единицу - " + maxInt--);
         int minInt = -2147483648;
         System.out.println("первоначальное значение - " + minInt);
-        minInt = ++minInt;
-        System.out.println("значение после инкремента на единицу - " + minInt);
-        minInt = --minInt;
-        System.out.println("значение после декремента на единицу - " + minInt);
+        System.out.println("значение после инкремента на единицу - " + minInt++);
+        System.out.println("значение после декремента на единицу - " + minInt--);
         long maxLong = 9223372036854775807L;
         System.out.println("первоначальное значение - " + maxLong);
-        maxLong = ++maxLong;
-        System.out.println("значение после инкремента на единицу - " + maxLong);
-        maxLong = --maxLong;
-        System.out.println("значение после декремента на единицу - " + maxLong);
+        System.out.println("значение после инкремента на единицу - " + maxLong++);
+        System.out.println("значение после декремента на единицу - " + maxLong--);
         long minLong = -9223372036854775808L;
         System.out.println("первоначальное значение - " + minLong);
-        minLong = ++minLong;
-        System.out.println("значение после инкремента на единицу - " + minLong);
-        minLong = --minLong;
-        System.out.println("значение после декремента на единицу - " + minLong);
+        System.out.println("значение после инкремента на единицу - " + minLong++);
+        System.out.println("значение после декремента на единицу - " + minLong--);
          
         System.out.println("\n5.Перестановка значений переменных");
         int a = 2;
@@ -103,54 +87,54 @@ public class VariablesTheme {
         System.out.println("c помощью побитовых операций");
         System.out.println("a = " + a + " и b = " + b);
         a ^= b;
-        b = a ^ b;
-        a = b ^ a;
+        b ^= a;
+        a ^= b;
         System.out.println("a = " + a + " и b = " + b);
 
         System.out.println("\n6.Вывод символов и их кодов");
         char dollar = '$';
-        char star = '*';
-        char dog = '@';
+        char asteriks = '*';
+        char sign = '@';
         char verticalBar = '|';
         char tilde = '~';
         System.out.println("36 - " + dollar);
-        System.out.println("42 - " + star);
-        System.out.println("64 - " + dog);
+        System.out.println("42 - " + asteriks);
+        System.out.println("64 - " + sign);
         System.out.println("124 - " + verticalBar);
         System.out.println("126 - " + tilde);
 
         System.out.println("\n7.Вывод в консоль ASCII-арт Дюка");
         char openParenthesis = '(';
         char closeParenthesis = ')';
-        char forwardSlash = '/';
+        char slash = '/';
         char backslash = '\\';
         char underscore = '_';
-        System.out.println("    " + forwardSlash + backslash);
-        System.out.println("   " + forwardSlash + "  " + backslash);
-        System.out.println("  " + forwardSlash + underscore + openParenthesis + " " + closeParenthesis + backslash);
-        System.out.println(" " + forwardSlash + "      " + backslash);
-        System.out.println("" + forwardSlash + underscore + underscore + underscore + underscore + forwardSlash + backslash + underscore
-        + underscore + backslash);
+        System.out.println("    " + slash + backslash);
+        System.out.println("   " + slash + "  " + backslash);
+        System.out.println("  " + slash + underscore + openParenthesis + " " + closeParenthesis + backslash);
+        System.out.println(" " + slash + "      " + backslash);
+        System.out.println("" + slash + underscore + underscore + underscore + underscore + slash 
+                + backslash + underscore+ underscore + backslash);
 
         System.out.println("\n8.Вывод количества сотен, десятков и единиц числа");
         int originNumber = 123;
-        int hundreds = (originNumber/100)%10;
-        int tens = (originNumber/10)%10;
-        int ones = (originNumber/1)%10;
+        int hundreds = (originNumber / 100) % 10;
+        int tens = (originNumber / 10) % 10;
+        int ones = originNumber % 10;
         int sumOfTheDigits = hundreds + tens + ones;
         int multiplication = hundreds * tens * ones;
         System.out.println("Число " + originNumber + " содержит:\n" +
-        "сотен - " + hundreds +
-        "\nдесятков - " + tens +
-        "\nединиц - " + ones +
-        "\nСумма его цифр = " + sumOfTheDigits +
-        "\nПроизведение = " + multiplication);
+                "сотен - " + hundreds +
+                "\nдесятков - " + tens +
+                "\nединиц - " + ones +
+                "\nСумма его цифр = " + sumOfTheDigits +
+                "\nПроизведение = " + multiplication);
 
         System.out.println("\n9.Вывод времени");
         int time = 86399;
-        int hours = time/(3600);
-        int minutes = time/60%60;
-        int seconds = time%60;
+        int hours = time / (3600);
+        int minutes = time / 60 % 60;
+        int seconds = time % 60;
         System.out.println(hours + " : " + minutes + " : " + seconds);
     }
 }
