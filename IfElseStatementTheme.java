@@ -22,22 +22,22 @@ public class IfElseStatementTheme {
             System.out.println("Высокий рост");
         }
 
-        char firstLetterOfTheName = "Евгений".charAt(0);
-        if (firstLetterOfTheName == 'M') {
+        char firstLetterName = "Евгений".charAt(0);
+        if (firstLetterName == 'M') {
             System.out.println("Имя начинается на букву М");
-        } else if (firstLetterOfTheName == 'I') {
+        } else if (firstLetterName == 'I') {
             System.out.println("Имя начинается на букву I");
         } else {
             System.out.println("Имя начинается на любую букву, кроме M и I");
         }
 
         System.out.println("\n2. Поиск большего числа");
-        int numOne = 2;
-        int numTwo = 5;
-        if (numOne > numTwo) {
-            System.out.println("число numOne больше, чем numTwo");
-        } else if (numOne < numTwo) {
-            System.out.println("число numOne меньше, чем numTwo");
+        int a = 2;
+        int b = 5;
+        if (a > b) {
+            System.out.println("число a больше, чем b");
+        } else if (a < b) {
+            System.out.println("число a меньше, чем b");
         } else {
             System.out.println("числа равны");
         }
@@ -46,55 +46,54 @@ public class IfElseStatementTheme {
         int originNum = 7;
         if (originNum == 0) {
             System.out.println("число равно 0");
-        } else if (originNum % 2 == 0) {
-            if (originNum > 0) {
-                System.out.println(originNum + " является положительным и чётным");
-            } else {
-                System.out.println(originNum + " является отрицательным и чётным");
-            }
-        } else if (originNum % 2 != 0){
-            if (originNum > 0) {
-                System.out.println(originNum + " является положительным и нечётным");
-            } else {
-                System.out.println(originNum + " является отрицательным и нечётным");
+        } else {
+                if (originNum > 0) {
+                    System.out.print(originNum + " является положительным ");
+                } else {
+                    System.out.print(originNum + " является отрицательным ");
+                }
+                if (originNum % 2 == 0) {
+                    System.out.println("чётным");
+                } else {
+                    System.out.println("нечётным");
             }
         }
 
         System.out.println("\n4. Поиск одинаковых цифр в числах");
-        int firstNum = 123;
-        int secondNum = 223;
-        int hundredsFirstNum = (firstNum / 100) % 10;
-        int tensFirstNum = (firstNum / 10) % 10;
-        int onesFirstNum = firstNum % 10;
-        int hundredsSecondNum = (secondNum / 100) % 10;
-        int tensSecondNum = (secondNum / 10) % 10;
-        int onesSecondNum = secondNum % 10;
-        if (hundredsFirstNum == hundredsSecondNum) {
-                System.out.println("исходные числа - " + firstNum + " и " + secondNum +
-                        "\nодинаковые цифры - " + hundredsFirstNum +
-                        "\nномер разряда - 3");
-        } if (tensFirstNum == tensSecondNum) {
-                System.out.println("исходные числа - " + firstNum + " и " + secondNum +
-                        "\nодинаковые цифры - " + tensFirstNum +
-                        "\nномер разряда - 2");
-        } if (onesFirstNum == onesSecondNum) {
-                System.out.println("исходные числа - " + firstNum + " и " + secondNum +
-                        "\nодинаковые цифры - " + onesFirstNum +
-                        "\nномер разряда - 1");
-        } else if(hundredsFirstNum != hundredsSecondNum || tensFirstNum != tensSecondNum ||
+        int num1 = 123;
+        int num2 = 223;
+        int hundredsFirstNum = (num1 / 100) % 10;
+        int tensFirstNum = (num1 / 10) % 10;
+        int onesFirstNum = num1 % 10;
+        int hundredsSecondNum = (num2 / 100) % 10;
+        int tensSecondNum = (num2 / 10) % 10;
+        int onesSecondNum = num2 % 10;
+        if (hundredsFirstNum != hundredsSecondNum & tensFirstNum != tensSecondNum &
                 onesFirstNum != onesSecondNum) {
             System.out.println("одинаковых цифр в разрядах нет");
+        } else {
+            System.out.print("исходные числа - " + num1 + " и " + num2 +" ");
+            if (hundredsFirstNum == hundredsSecondNum) {
+                System.out.print("\nодинаковые цифры - " + hundredsFirstNum +
+                        "\nномер разряда - 3");
+            } if (tensFirstNum == tensSecondNum) {
+                System.out.print("\nодинаковые цифры - " + tensFirstNum +
+                        "\nномер разряда - 2");
+            } if (onesFirstNum == onesSecondNum) {
+                System.out.println("\nодинаковые цифры - " + onesFirstNum +
+                        "\nномер разряда - 1");
+            }
         }
 
         System.out.println("\n5. Определение символа по его коду");
         char letterOrDigit = '\u0031';
-        if(letterOrDigit >= 'a' && letterOrDigit <= 'z'){
+        if(letterOrDigit >= 'a' && letterOrDigit <= 'z') {
             System.out.println("Символ " + letterOrDigit + " является маленькой буквой");
-        }else if(letterOrDigit >= 'A' && letterOrDigit <= 'Z'){
+        } else if(letterOrDigit >= 'A' && letterOrDigit <= 'Z') {
             System.out.println("Символ " + letterOrDigit + " является большой буквой");
-        }else if(letterOrDigit >= '0' && letterOrDigit <= '9'){
+        } else if(letterOrDigit >= '0' && letterOrDigit <= '9') {
             System.out.println("Символ " + letterOrDigit + " является цифрой");
-        }else{
+        } else {
             System.out.println("Символ " + letterOrDigit + " является не буквой и не цифрой");
         }
 
