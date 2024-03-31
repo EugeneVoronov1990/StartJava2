@@ -39,34 +39,18 @@ public class VariablesTheme {
         System.out.println("первоначальное значение - " + maxByte);
         System.out.println("значение после инкремента на единицу - " + ++maxByte);
         System.out.println("значение после декремента на единицу - " + --maxByte);
-        byte minByte = -128;
-        System.out.println("первоначальное значение - " + minByte);
-        System.out.println("значение после инкремента на единицу - " + ++minByte);
-        System.out.println("значение после декремента на единицу - " + --minByte);
         short maxShort = 32767;
         System.out.println("первоначальное значение - " + maxShort);
         System.out.println("значение после инкремента на единицу - " + ++maxShort);
         System.out.println("значение после декремента на единицу - " + --maxShort);
-        short minShort = -32768;
-        System.out.println("первоначальное значение - " + minShort);
-        System.out.println("значение после инкремента на единицу - " + ++minShort);
-        System.out.println("значение после декремента на единицу - " + --minShort);
         int maxInt = 2147483647;
         System.out.println("первоначальное значение - " + maxInt);
         System.out.println("значение после инкремента на единицу - " + ++maxInt);
         System.out.println("значение после декремента на единицу - " + --maxInt);
-        int minInt = -2147483648;
-        System.out.println("первоначальное значение - " + minInt);
-        System.out.println("значение после инкремента на единицу - " + ++minInt);
-        System.out.println("значение после декремента на единицу - " + --minInt);
         long maxLong = 9223372036854775807L;
         System.out.println("первоначальное значение - " + maxLong);
         System.out.println("значение после инкремента на единицу - " + ++maxLong);
         System.out.println("значение после декремента на единицу - " + --maxLong);
-        long minLong = -9223372036854775808L;
-        System.out.println("первоначальное значение - " + minLong);
-        System.out.println("значение после инкремента на единицу - " + ++minLong);
-        System.out.println("значение после декремента на единицу - " + --minLong);
          
         System.out.println("\n5.Перестановка значений переменных");
         int a = 2;
@@ -92,13 +76,13 @@ public class VariablesTheme {
 
         System.out.println("\n6.Вывод символов и их кодов");
         char dollar = '$';
-        char asteriks = '*';
-        char sign = '@';
+        char asterisk = '*';
+        char atSign = '@';
         char verticalBar = '|';
         char tilde = '~';
         System.out.println((int) dollar + " - " + dollar);
-        System.out.println((int) asteriks + " - " + asteriks);
-        System.out.println((int) sign + " - " + sign);
+        System.out.println((int) asterisk + " - " + asterisk);
+        System.out.println((int) atSign + " - " + atSign);
         System.out.println((int) verticalBar + " - " + verticalBar);
         System.out.println((int) tilde + " - " + tilde);
 
@@ -131,9 +115,9 @@ public class VariablesTheme {
 
         System.out.println("\n9.Вывод времени");
         int time = 86399;
-        int hours = time / 3600;
-        int minutes = time / 60 % 60;
-        int seconds = time % 60;
-        System.out.println(hours + " : " + minutes + " : " + seconds);
+        int hh = time / 3600;
+        int mm = time / 60 % 60;
+        int ss = time % 60;
+        System.out.println(hh + " : " + mm + " : " + ss);
     }
 }

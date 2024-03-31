@@ -29,8 +29,8 @@ public class VariableNamesTheme {
         System.out.println("\nисходное число - " + originalNum);
 
         //процент по вкладу
-        double interestOnDeposit = 9.5;
-        System.out.println("\nпроцент по вкладу - " + interestOnDeposit);
+        double rate = 9.5;
+        System.out.println("\nпроцент по вкладу - " + rate);
 
         //(переменная хранит символ)&
         char symbol = '&';
@@ -45,8 +45,8 @@ public class VariableNamesTheme {
         System.out.println("\nтип сообщения - " + typeOfMessage);
 
         //число нулей
-        int numOfZero = 2;
-        System.out.println("\nчисло нулей - " + numOfZero);
+        int zeros = 2;
+        System.out.println("\nчисло нулей - " + zeros);
 
         //уникальное число
         int uniqueNum = 73;
@@ -90,8 +90,8 @@ public class VariableNamesTheme {
         System.out.println("\nокончание диапозона - " + endRange);
 
         //полное имя работника месяца
-        String fullNameEmployeeOfTheMonth = "Александр";
-        System.out.println("\nполное имя работника месяца - " + fullNameEmployeeOfTheMonth);
+        String fullNameEmployeeOfMonth = "Александр";
+        System.out.println("\nполное имя работника месяца - " + fullNameEmployeeOfMonth);
 
         //заголовок электронной книги
         String ebookTitle = "Приключения";
@@ -174,8 +174,8 @@ public class VariableNamesTheme {
         System.out.println("\nсокращенный uniform resource locator - " + shortUrl);
 
         //новый идентификатор клиента
-        String newClientId = "135656";
-        System.out.println("\nновый идентификатор клиента - " + newClientId);
+        String newCid = "135656";
+        System.out.println("\nновый идентификатор клиента - " + newCid);
 
         //кодировка american standard code for information interchange
         String acsii = "таблица кодировки";
