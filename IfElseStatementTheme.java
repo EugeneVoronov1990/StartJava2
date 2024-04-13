@@ -104,43 +104,45 @@ public class IfElseStatementTheme {
         double depositAmount = 301000;
         double depositAmountWithPercent = 0;
         double percentAmount = 0;
+        double perCent = 0.05;
         if (depositAmount < 100000) {
-            percentAmount = depositAmount * 0.05;
+            perCent = 0.05;
         } else if (depositAmount >= 100000 && depositAmount <= 300000) {
-            percentAmount = depositAmount * 0.07;
+            perCent = 0.07;
         } else if (depositAmount > 300000) {
-            percentAmount = depositAmount * 0.1;
+            perCent = 0.1;
         }
+        percentAmount = depositAmount * perCent;
         depositAmountWithPercent = depositAmount + percentAmount;
-        System.out.println("Сумма вклада - " + depositAmount + 
-                "\nСумма начисленного % - " + percentAmount + 
+        System.out.println("Сумма вклада - " + depositAmount +
+                "\nСумма начисленного % - " + percentAmount +
                 "\nИтоговая сумма с % - " + depositAmountWithPercent);
 
         System.out.println("\n7. Определение оценки по предметам");
-        int gradeHistory = 2;
-        int percentHistory = 59;
-        if (percentHistory > 60 && percentHistory <= 73) {
-            gradeHistory = 3;
-        } else if (percentHistory > 73 && percentHistory <= 91) {
-            gradeHistory = 4;
-        } else if (percentHistory > 91) {
-            gradeHistory = 5;
+        int historyGrade = 2;
+        int historyPercent = 59;
+        if (historyPercent > 60 && historyPercent <= 73) {
+            historyGrade = 3;
+        } else if (historyPercent > 73 && historyPercent <= 91) {
+            historyGrade = 4;
+        } else if (historyPercent > 91) {
+            historyGrade = 5;
         }
-        int gradeProgramming = 2;
-        int percentProgramming = 92;
-        if (percentProgramming > 60 && percentProgramming <= 73) {
-            gradeProgramming = 3;
-        } else if (percentProgramming > 73 && percentProgramming <= 91) {
-            gradeProgramming = 4;
-        } else if (percentProgramming > 91) {
-            gradeProgramming = 5;
+        int programmingGrade = 2;
+        int programmingPercent = 92;
+        if (programmingPercent > 60 && programmingPercent <= 73) {
+            programmingGrade = 3;
+        } else if (programmingPercent > 73 && programmingPercent <= 91) {
+            programmingGrade = 4;
+        } else if (programmingPercent > 91) {
+            programmingGrade = 5;
         }
-        int averagePercent = (percentHistory + percentProgramming) / 2;
-        int gpa = (gradeHistory + gradeProgramming) / 2;
-        System.out.println("History - " + gradeHistory + 
-                "\nProgramming - " + gradeProgramming + 
-                "\nсредний балл оценок по предметам - " + gpa + 
-                "\nсредний % по предметам - " + averagePercent);
+        double avgPercent = (historyPercent + programmingPercent) / 2;
+        double gpa = (historyGrade + programmingGrade) / 2;
+        System.out.println("History - " + historyGrade +
+                "\nProgramming - " + programmingGrade +
+                "\nсредний балл оценок по предметам - " + gpa +
+                "\nсредний % по предметам - " + avgPercent);
 
         System.out.println("\n8. Расчет годовой прибыли");
         int saleGoods = 13000;
