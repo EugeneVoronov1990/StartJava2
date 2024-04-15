@@ -1,4 +1,3 @@
-
 public class Calculator {
     public static void main(String[] args) {
         int a = 3;
@@ -15,7 +14,7 @@ public class Calculator {
             result = a / b;
         } else if (sign == '^') {
             for (int exponent = b; exponent > 0; exponent--) {
-                result = result * a;
+                result *= a;
             }
         } else if (sign == '%') {
             result = a % b;

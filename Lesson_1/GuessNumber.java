@@ -1,19 +1,14 @@
-
 public class GuessNumber { 
     public static void main(String[] args) {
-        byte random = 50;
-        random ^= (random << 2);
-        random ^= (random >> 1);
-        byte num = 50;
-        while (random != num) {
-            if (random < num) {
-                System.out.println("Число " + num + " больше того, что загадал компьютер");
-                num--;
-            } else if (random > num) {
-                System.out.println("Число " + num + " меньше того, что загадал компьютер");
-                num++;
-            } else if (random == num) {
-                break;
+        int randomNumber = (int) (Math.random() * 1000);
+        int inputNumber = 50;
+        while (randomNumber != inputNumber) {
+            if (randomNumber < inputNumber) {
+                System.out.println("Число " + inputNumber + " больше того, что загадал компьютер");
+                inputNumber--;
+            } else if (randomNumber > inputNumber) {
+                System.out.println("Число " + inputNumber + " меньше того, что загадал компьютер");
+                inputNumber++;
             }
         }
         System.out.println("Вы победили");
