@@ -93,17 +93,17 @@ public class CyclesTheme {
         }
 
         System.out.println("\n");
-        int lengthTriangle = 5;
-        int heightTriangle;
-        heightTriangle = lengthTriangle;
-        while (heightTriangle >= 1) {
+        int length = 5;
+        int height;
+        height = length;
+        while (height >= 1) {
             int lineLengthCounter = 1;
-            while (lineLengthCounter <= heightTriangle) {
+            while (lineLengthCounter <= height) {
                 System.out.print("#");
                 lineLengthCounter++;
             }
             System.out.println();
-            heightTriangle--;
+            height--;
         }
 
         System.out.println("\n");
@@ -136,12 +136,11 @@ public class CyclesTheme {
 
         System.out.println("\n8. Проверка является ли число палиндромом");
         originNumber = 1234321;
-        int lastDigitOriginNumber = 0;
         int reverseNumber = 0;
         originNumberCopy = originNumber;
         while (originNumber > 0) {
-            lastDigitOriginNumber = originNumber % 10;
-            reverseNumber = reverseNumber * 10 + lastDigitOriginNumber;
+            int digit  = originNumber % 10;
+            reverseNumber = reverseNumber * 10 + digit;
             originNumber /= 10;
         }
         if (originNumberCopy == reverseNumber) {
@@ -155,21 +154,24 @@ public class CyclesTheme {
         originNumber = 123123;
         int firstPart = originNumber / 1000;
         int secondPart = originNumber - firstPart * 1000;
+        int firstThreeDigit = firstPart;
+        int secondThreeDigit = secondPart;
         int sumFirstPart = 0;
         int sumSecondPart = 0;
-        while (firstPart > 0 || secondPart > 0) {
+        while (secondPart > 0) {
             sumFirstPart += firstPart % 10;
             sumSecondPart += secondPart % 10;
             firstPart /= 10;
             secondPart /= 10;
         }
+        System.out.print("Число " + originNumber);
         if (sumFirstPart == sumSecondPart) {
-            System.out.println("Число " + originNumber + " является счастливым\n" +
-                    "Сумма цифр ABC = " + sumFirstPart + ", а сумма DEF = " + sumSecondPart);
+            System.out.println(" является счастливым ");
         } else {
-            System.out.println("Число " + originNumber + " не является счастливым\n" +
-                    "Сумма цифр ABC = " + sumFirstPart + ", а сумма DEF = " + sumSecondPart);
+            System.out.println(" не является счастливым ");
         }
+        System.out.println("Сумма цифр " + firstThreeDigit + " = " + sumFirstPart + 
+                ", а сумма " + secondThreeDigit + " = " + sumSecondPart);
 
         System.out.println("\n10. Отображение таблицы умножения Пифагора");
         for (int i = 0; i < 9; i++) {
