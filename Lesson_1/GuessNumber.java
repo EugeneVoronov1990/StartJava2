@@ -1,6 +1,6 @@
 public class GuessNumber { 
     public static void main(String[] args) {
-        int randomNumber = (int) (Math.random() * 100);
+        int randomNumber = (int) (Math.random() * 99);
         int inputNumber = 50;
         while (randomNumber != inputNumber) {
             if (randomNumber < inputNumber) {
