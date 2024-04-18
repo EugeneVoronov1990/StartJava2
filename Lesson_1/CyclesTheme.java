@@ -139,7 +139,7 @@ public class CyclesTheme {
         int reverseNumber = 0;
         originNumberCopy = originNumber;
         while (originNumber > 0) {
-            int digit  = originNumber % 10;
+            int digit = originNumber % 10;
             reverseNumber = reverseNumber * 10 + digit;
             originNumber /= 10;
         }
@@ -150,12 +150,11 @@ public class CyclesTheme {
                     " не является палиндромом");
         }
 
-        System.out.println("\n9.Проверка, является ли число счастливым");
         originNumber = 123123;
         int firstPart = originNumber / 1000;
-        int secondPart = originNumber - firstPart * 1000;
-        int firstThreeDigit = firstPart;
-        int secondThreeDigit = secondPart;
+        int secondPart = originNumber % 1000;
+        int firstPartCopy = firstPart;
+        int secondPartCopy = secondPart;
         int sumFirstPart = 0;
         int sumSecondPart = 0;
         while (secondPart > 0) {
@@ -170,8 +169,8 @@ public class CyclesTheme {
         } else {
             System.out.println(" не является счастливым ");
         }
-        System.out.println("Сумма цифр " + firstThreeDigit + " = " + sumFirstPart + 
-                ", а сумма " + secondThreeDigit + " = " + sumSecondPart);
+        System.out.println("Сумма цифр " + firstPartCopy + " = " + sumFirstPart +
+                ", а сумма " + secondPartCopy + " = " + sumSecondPart);
 
         System.out.println("\n10. Отображение таблицы умножения Пифагора");
         for (int i = 0; i < 9; i++) {

@@ -6,7 +6,7 @@ public class GuessNumber {
             if (randomNumber < inputNumber) {
                 System.out.println("Число " + inputNumber + " больше того, что загадал компьютер");
                 inputNumber--;
-            } else if (randomNumber > inputNumber) {
+            } else {
                 System.out.println("Число " + inputNumber + " меньше того, что загадал компьютер");
                 inputNumber++;
             }
