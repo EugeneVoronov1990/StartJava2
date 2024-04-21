@@ -1,12 +1,12 @@
 public class JaegerTest {
     public static void main(String[] args) {
-        Jaeger gipsyDanger = new Jaeger("Gipsy Danger", "Mark-3", "USA", 79.25F);
-
-        Jaeger strikerEureka = new Jaeger("", "", "", 0.0F);
+        Jaeger strikerEureka = new Jaeger();
         strikerEureka.setName("Striker Eureka");
         strikerEureka.setModel("Mark-5");
         strikerEureka.setOrigin("Australia");
         strikerEureka.setHeight(76.2F);
+
+        Jaeger gipsyDanger = new Jaeger("Gipsy Danger", "Mark-3", "USA", 79.25F);
 
         System.out.println("Информация о роботе Gipsy Danger:");
         gipsyDanger.output();

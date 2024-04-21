@@ -1,5 +1,5 @@
 public class Calculator {
-    public static void calculate(int a, char sign, int b) {
+    public void calculate(int a, char sign, int b) {
         int result = 0;
         switch (sign) {
             case '+':
@@ -16,7 +16,7 @@ public class Calculator {
                 break;
             case '^':
                 result = 1;
-                for (int exponent = b; exponent > 0; exponent--) {
+                for (int i = b; i > 0; i--) {
                     result *= a;
                 }
                 break;
@@ -25,7 +25,6 @@ public class Calculator {
                 break;
             default:
                 System.out.println("Введенная математическая операция не поддерживается!");
-                break;
         }
         System.out.println(a + " " + sign + " " + b + " = " + result);
     }

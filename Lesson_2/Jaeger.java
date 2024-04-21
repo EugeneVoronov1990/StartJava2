@@ -11,6 +11,9 @@ public class Jaeger {
         this.height = height;
     }
 
+    public Jaeger() {
+    }
+
     public void setName(String name) {
         this.name = name;
     }
