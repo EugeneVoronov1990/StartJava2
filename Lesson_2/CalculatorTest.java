@@ -21,7 +21,7 @@ public class CalculatorTest {
             String answer = scanner.next();
 
             if (answer.equalsIgnoreCase("no")) {
-                System.out.println("Игра завершена.");
+                System.out.println("Программа завершена.");
                 break;
             } else if (!answer.equalsIgnoreCase("yes")) {
                 System.out.println("Некорректный ввод. Пожалуйста, введите 'yes' или 'no'.");
