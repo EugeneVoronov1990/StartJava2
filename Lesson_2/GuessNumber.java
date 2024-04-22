@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
 public class GuessNumber {
-    private Player playerOne;
-    private Player playerTwo;
+    private Player player1;
+    private Player player2;
     private int randomNumber;
 
-    public GuessNumber(Player playerOne, Player playerTwo) {
-        this.playerOne = playerOne;
-        this.playerTwo = playerTwo;
+    public GuessNumber(Player player1, Player player2) {
+        this.player1 = player1;
+        this.player2 = player2;
         this.randomNumber = (int) (Math.random() * 100) + 1;
     }
 
     public void play() {
-        Player currentPlayer = playerOne;
+        Player currentPlayer = player1;
         Scanner scanner = new Scanner(System.in);
         int inputNumber = 0;
         while (randomNumber != inputNumber) {
@@ -27,10 +27,10 @@ public class GuessNumber {
             } else {
                 System.out.println("Число " + inputNumber + " меньше загаданного числа.");
             }
-            if (currentPlayer == playerOne) {
-                currentPlayer = playerTwo;
+            if (currentPlayer == player1) {
+                currentPlayer = player2;
             } else {
-                currentPlayer = playerOne;
+                currentPlayer = player1;
             }
         }
     }

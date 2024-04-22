@@ -3,32 +3,24 @@ import java.util.Scanner;
 public class GuessNumberTest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        String answer = "yes";
+        while (answer.equalsIgnoreCase("yes")) {
+            System.out.print("Введите имя первого игрока: ");
+            String name1 = scanner.nextLine();
+            Player player1 = new Player(name1);
 
-        System.out.print("Введите имя первого игрока: ");
-        String nameOne = scanner.nextLine();
+            System.out.print("Введите имя второго игрока: ");
+            String name2 = scanner.nextLine();
+            Player player2 = new Player(name2);
 
-        System.out.print("Введите имя второго игрока: ");
-        String nameTwo = scanner.nextLine();
+            GuessNumber game = new GuessNumber(player1, player2);
+            game.play();
 
-        Player playerOne = new Player(nameOne);
-        Player playerTwo = new Player(nameTwo);
-
-        GuessNumber game = new GuessNumber(playerOne, playerTwo);
-        game.play();
-
-        while (true) {
-            System.out.print("Хотите продолжить игру? [yes/no]: ");
-            String answer = scanner.nextLine();
-
-            if (answer.equalsIgnoreCase("yes")) {
-                game = new GuessNumber(playerOne, playerTwo);
-                game.play();
-            } else if (answer.equalsIgnoreCase("no")) {
-                System.out.println("Игра завершена.");
-                break;
-            } else {
-                System.out.println("Некорректный ввод. Пожалуйста, введите 'yes' или 'no'.");
-            }
+            do {
+                System.out.print("Хотите продолжить? [yes/no]: ");
+                answer = scanner.nextLine();
+            } while (!answer.equalsIgnoreCase("yes") && !answer.equalsIgnoreCase("no"));
         }
+        System.out.println("Игра завершена");
     }
 }

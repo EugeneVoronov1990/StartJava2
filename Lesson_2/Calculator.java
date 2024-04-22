@@ -25,6 +25,7 @@ public class Calculator {
                 break;
             default:
                 System.out.println("Введенная математическая операция не поддерживается!");
+                return;
         }
         System.out.println(a + " " + sign + " " + b + " = " + result);
     }

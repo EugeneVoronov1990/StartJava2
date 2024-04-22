@@ -4,14 +4,14 @@ public class Jaeger {
     private String origin;
     private float height;
 
+    public Jaeger() {
+    }
+
     public Jaeger(String name, String model, String origin, float height) {
         this.name = name;
         this.model = model;
         this.origin = origin;
         this.height = height;
-    }
-
-    public Jaeger() {
     }
 
     public void setName(String name) {
